@@ -11,7 +11,9 @@ function App() {
         <Header/>
     </header>
     
-    
+    <body>
+    </body>
+
 
     <footer>
         <Footer/>
