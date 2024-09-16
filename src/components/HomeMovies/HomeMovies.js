@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Component } from "react";
 import './HomeMovies.css'; 
 
-class Populares extends Component {
+class HomeMovies extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -47,4 +47,4 @@ class Populares extends Component {
   }
 }
 
-export default Populares;
+export default HomeMovies;

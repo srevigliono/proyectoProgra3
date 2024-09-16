@@ -2,7 +2,7 @@ import { Component } from "react";
 import Populares from "../HomeMovies/HomeMovies";
 import './HomeMoviesGrid.css';
 
-class PopularesGrid extends Component {
+class HomeMoviesGrid extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,9 +14,8 @@ class PopularesGrid extends Component {
     fetch('https://api.themoviedb.org/3/movie/popular?api_key=e6a0d8ba2d9778d0953077400f26f011&language=en-US&page=1')
       .then(response => response.json())
       .then(data => {
-        if (data && data.results) {
-          const primerasDiezPeliculas = data.results.slice(0, 5);
-          this.setState({ peliculaspopulares: primerasDiezPeliculas });
+        if (data && data.results) { 
+          this.setState({ peliculaspopulares: data.results.slice(0, 5) });
         } else {
           console.error("No se encuentran películas");
         }
@@ -38,8 +37,9 @@ class PopularesGrid extends Component {
             : <p className="loading-message">Cargando...</p>}
         </div>
       </section>
+      
     );
   }
 }
 
-export default PopularesGrid;
+export default HomeMoviesGrid;
