@@ -2,7 +2,7 @@ body{
     background-color: #555;
 }
 
-.populares-grid-section {
+.seccion {
     padding: 20px;
   }
   
@@ -18,7 +18,7 @@ body{
     text-align: center;
   }
   
-  .populares-grid-container {
+  .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
