@@ -11,6 +11,7 @@ const Home = () => {
   return (
     <>
       <main>
+        
         <header>
           <input
             type="text"
