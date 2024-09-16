@@ -1,6 +1,6 @@
 import { Component } from "react";
-import Populares from "../Populares/Populares";
-import './PopularesGrid.css';
+import Populares from "../HomeMovies/HomeMovies";
+import './HomeMoviesGrid.css';
 
 class PopularesGrid extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class PopularesGrid extends Component {
       .then(response => response.json())
       .then(data => {
         if (data && data.results) {
-          const primerasDiezPeliculas = data.results.slice(0, 10);
+          const primerasDiezPeliculas = data.results.slice(0, 5);
           this.setState({ peliculaspopulares: primerasDiezPeliculas });
         } else {
           console.error("No se encuentran películas");

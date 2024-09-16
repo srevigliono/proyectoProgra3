@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PopularesGrid from "../components/PopularesGrid/PopularesGrid";
+import PopularesGrid from "../components/HomeMoviesGrid/HomeMoviesGrid";
 
 const Home = () => {
   const [query, setQuery] = useState("");

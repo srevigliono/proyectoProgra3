@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Component } from "react";
-import './Populares.css'; 
+import './HomeMovies.css'; 
 
 class Populares extends Component {
   constructor(props) {
