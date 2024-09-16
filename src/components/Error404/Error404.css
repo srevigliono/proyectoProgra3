@@ -1,0 +1,18 @@
+.imagen-error {
+ 
+    width: 55%; 
+    margin: 0 auto; 
+    display: block; 
+    margin-bottom: 20px; 
+}
+
+.text-error {
+    text-align: center; 
+    font-size: 35px;
+}
+
+.link-error {
+    color: red; 
+    text-decoration: underline;
+    font-weight: bold;
+}
