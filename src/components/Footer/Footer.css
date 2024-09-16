@@ -1,5 +1,5 @@
 footer {
-    background-color:midnightblue;
+    background-color:rgb(95, 95, 222);
     color: white;
     padding: 20px;
     text-align: center; 
@@ -8,7 +8,7 @@ footer {
   
   footer i {
     margin-right: 10px; 
-    color: #8e1717;
+    color: #3b3b3b;
   }
   
   footer i:last-child {

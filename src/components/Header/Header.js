@@ -15,9 +15,6 @@ const Header = () => {
             <li>
                 <Link to={"/favorites"}>Favoritos</Link> 
             </li>
-            <li>
-                <Link to={"/all-movies"}>Ver todas</Link> 
-            </li>
             </ul>
         </nav>
         </header>

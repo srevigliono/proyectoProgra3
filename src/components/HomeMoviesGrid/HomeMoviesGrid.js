@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Populares from "../HomeMovies/HomeMovies";
 import './HomeMoviesGrid.css';
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 class HomeMoviesGrid extends Component {
   constructor(props) {
@@ -28,13 +29,14 @@ class HomeMoviesGrid extends Component {
 
     return (
       <section className="populares-grid-section">
-        <h2 className="populares-grid-title">Películas Populares</h2>
+        <h2 className="populares-titulo">Películas Populares</h2>
+        <h3 className="vermas"> <Link to={"/all-movies"}>Ver todas</Link> </h3>   
         <div className="populares-grid-container">
           {peliculaspopulares.length > 0
             ? peliculaspopulares.map((movie, index) => (
                 <Populares movie={movie} key={index} />
               ))
-            : <p className="loading-message">Cargando...</p>}
+            : <p className="cargando">Cargando...</p>}
         </div>
       </section>
       

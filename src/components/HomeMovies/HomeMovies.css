@@ -38,7 +38,7 @@
   }
   
   .populares-button {
-    background-color: #007bff;
+    background-color: rgb(95, 95, 222);
     color: white;
     border: none;
     padding: 4px 8px; 
@@ -48,7 +48,7 @@
   }
   
   .populares-button:hover {
-    background-color: #0056b3;
+    background-color: rgb(95, 95, 222);
   }
   
   .populares-overview {

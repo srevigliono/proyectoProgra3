@@ -13,13 +13,7 @@ const Home = () => {
       <main>
         
         <header>
-          <input
-            type="text"
-            placeholder="Buscar películas..."
-            value={query}
-            onChange={handleSearchChange}
-            className="search-input"
-          />
+
         </header>
 
         <PopularesGrid searchQuery={query} />
