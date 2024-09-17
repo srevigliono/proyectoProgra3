@@ -30,7 +30,8 @@ class HomeMoviesGrid extends Component {
 
     return (
       <section className="seccion">
-        <h3 className="vermas"><Link to={"/all-movies"}>Ver todas</Link></h3>
+        <h2 class="titulo">{this.props.titulo}</h2>
+        <h3 className="vermas"><Link to={this.props.link}>Ver todas</Link></h3>
         <div className="populares-grid-container">
           {movies.length > 0
             ? movies.map((movie, index) => (

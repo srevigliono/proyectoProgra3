@@ -18,7 +18,11 @@
 
 .titulo{
   text-align: center;
-  
+  background-color: #5f5fde ;
+  border-radius: 5px;
+  padding: 6px 12px;
+  margin-left: 550px;
+  margin-right: 550px;
 }
 
 .populares-grid-container {
