@@ -1,18 +1,12 @@
-.imagen-error {
- 
-    width: 55%; 
-    margin: 0 auto; 
-    display: block; 
-    margin-bottom: 20px; 
-}
-
 .text-error {
     text-align: center; 
     font-size: 35px;
+    font: bolder;
+
 }
 
 .link-error {
-    color: red; 
+    color: rgb(8, 185, 182); 
     text-decoration: underline;
     font-weight: bold;
 }
