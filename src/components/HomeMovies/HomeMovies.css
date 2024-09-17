@@ -1,79 +1,63 @@
-.populares-card {
-    position: relative;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 250px;
-    margin: 20px;
-  }
-  
-  .populares-image-link {
-    display: block;
-  }
-  
-  .populares-image {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-  }
-  
-  .populares-title-overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background:black;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .populares-title-overlay h3 {
-    margin: 0;
-  }
-  
-  .populares-buttons {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-  }
-  
-  .populares-button {
-    background-color: rgb(95, 95, 222);
-    color: white;
-    border: none;
-    padding: 4px 8px; 
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 12px;
-  }
-  
-  .populares-button:hover {
-    background-color: rgb(95, 95, 222);
-  }
-  
-  .populares-overview {
-    padding: 10px;
-    font-size: 14px;
-    color: #fafafa;
-  }
-  
-  .populares-card.expanded {
-    height: auto;
-  }
-  
-  .populares-grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .search-input {
-    display: block;
-    margin: 20px auto;
-    padding: 10px;
-    width: 60%;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-  }
-  
+.pelicula {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 250px;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f7f7f7;
+}
+
+
+.imagen {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.pelicula:hover .imagen {
+  transform: scale(1.02);
+}
+
+.titulo-pelicula{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.titulo-pelicula h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.botones {
+  background-color: #5f5fde;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+.description{
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 10px 10px;
+}

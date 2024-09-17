@@ -21,27 +21,27 @@ class HomeMovies extends Component {
     const { showExtra } = this.state;
 
     return (
-      <article className="populares-card">
-        <Link to={`/movies/${id}`} className="populares-image-link">
+      <article className="pelicula">
+        <Link to={`/movies/${id}`} >
           <img
             src={`https://image.tmdb.org/t/p/w400${poster_path}`}
             alt={title}
-            className="populares-image"
+            className="imagen"
           />
-          <div className="populares-title-overlay">
+          <div className="titulo-pelicula">
             <h3>{title}</h3>
           </div>
         </Link>
 
-        <div className="populares-buttons">
-          <button onClick={this.descripcion} className="populares-button">
+        <div className="buttons">
+          <button onClick={this.descripcion} className="botones">
             {showExtra ? "Ocultar descripción" : "Ver descripción"}
           </button>
 
-          <button className="populares-button">Agregar a Favoritos</button>
+          <button className="botones"><i className="fas fa-star"></i></button>
         </div>
 
-        {showExtra && <p className="populares-overview">{overview}</p>}
+        {showExtra && <p className="description">{overview}</p>}
       </article>
     );
   }
