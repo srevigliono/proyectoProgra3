@@ -13,7 +13,7 @@ const Footer = () => {
             <div>
                 <p></p>
             </div>
-            <div class="iconos">
+            <div className="iconos">
                 <i className="fab fa-github"></i>
                 <i className="fab fa-instagram"></i>
                 <i className="fab fa-twitter"></i>
