@@ -1,0 +1,39 @@
+.seccion {
+    padding: 30px;
+    background-color: #eaeaea;
+  }
+  
+  .vermas {
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #1c3a63;
+  }
+  
+  .vermas a {
+    color: #1c3a63;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .titulo{
+    text-align: center;
+    background-color: #5f5fde ;
+    border-radius: 5px;
+    padding: 6px 12px;
+    margin-left: 550px;
+    margin-right: 550px;
+  }
+  
+  .peliculas-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .cargando {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+  }
+  
