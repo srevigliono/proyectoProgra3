@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import PopularesGrid from "../components/PopularesGrid/PopularesGrid";
 
 class Populares extends Component {
-
-  render(
-
-    ) {
+  render() {
       return (
         <>
           <main>

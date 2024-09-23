@@ -24,7 +24,7 @@ class CarteleraGrid extends Component {
       .catch(error => console.log(error));
   }
 
-  handleSearch = (event) => {
+  handleInputSearch = (event) => {
     this.setState({ search: event.target.value });
   };
 
