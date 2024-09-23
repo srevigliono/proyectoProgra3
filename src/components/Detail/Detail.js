@@ -37,10 +37,10 @@ class Detail extends Component {
 
                     <div className="infoDetalle">
                     <h2>{movie.title}</h2>
-                    <p>Rating: </p>
-                    <p>Fecha De Estreno: </p>
-                    <p>Duracion: </p>
-                    <p>Sinopsis: </p>
+                    <p>Rating: {movie.vote_average} </p>
+                    <p>Fecha De Estreno: {movie.release_date} </p>
+                    <p>Duracion: {movie.runtime} </p>
+                    <p>Sinopsis: {movie.overview} </p>
                     <p>Género: </p>
                     <button> Agregar a favoritos </button>
                     </div>
