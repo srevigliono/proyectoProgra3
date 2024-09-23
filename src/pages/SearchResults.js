@@ -6,7 +6,7 @@ export class SearchResults extends Component {
     }
     render() {
         return (
-            <div>SearchResults {this.props.location.state.query}</div>
+            <div>Resultados de Busqueda:  {this.props.location.state.query}</div>
         )
     }
 }

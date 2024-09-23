@@ -8,6 +8,7 @@ const Header = () => {
             <h1>Movies Spotlight</h1> {}
         </div>
         <nav >
+            
             <ul>
             <li>
                 <Link to={"/"}>Home</Link> 
