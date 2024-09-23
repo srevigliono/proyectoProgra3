@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Detail.css"
-
+import Loader from "../Loader/Loader";
 class Detail extends Component {
     constructor(props) {
         super(props);
@@ -24,8 +24,9 @@ class Detail extends Component {
 
     render() {
         const { movie } = this.state;
-        if (!movie) {
-            return <div>Cargando...</div>;
+        
+        if(!movie) {
+            return <Loader/>;
         }
 
         return (
