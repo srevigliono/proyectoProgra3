@@ -24,7 +24,7 @@ class PopularesGrid extends Component {
       .catch(error => console.log(error));
   }
 
-  handleInputSearch = (event) => {
+  handleInputChange = (event) => {
     this.setState({ search: event.target.value });
   };
 
