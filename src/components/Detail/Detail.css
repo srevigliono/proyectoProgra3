@@ -1,0 +1,44 @@
+.detalle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #eaeaea;
+  }
+  
+  .detalle img {
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .infoDetalle {
+    background-color:rgba(131, 130, 155, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .infoDetalle h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .infoDetalle p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .infoDetalle button {
+    background-color: #5f5fde;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .infoDetalle button:hover {
+    background-color: #4e4ecb;
+  }
+  
