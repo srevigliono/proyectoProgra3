@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Detail.css"
 
 class Detail extends Component {
     constructor(props) {
@@ -23,12 +24,17 @@ class Detail extends Component {
 
     render() {
         const { movie } = this.state;
+        if (!movie) {
+            return <div>Cargando...</div>;
+        }
 
         return (
          
-                <div>
+                <div className="detalle">
                     <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt={movie.title}
                     />
+
+                    <div className="infoDetalle">
                     <h2>{movie.title}</h2>
                     <p>Rating: </p>
                     <p>Fecha De Estreno: </p>
@@ -36,6 +42,7 @@ class Detail extends Component {
                     <p>Sinopsis: </p>
                     <p>Género: </p>
                     <button> Agregar a favoritos </button>
+                    </div>
                 </div>
       
         );
