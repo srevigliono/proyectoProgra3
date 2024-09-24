@@ -63,3 +63,25 @@
   gap: 15px;
   justify-content: center;
 }
+
+.cargarmas {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cargarmas:hover {
+  background-color: #0056b3;
+}
+
+.cargarmas:active {
+  background-color: #004080;
+}

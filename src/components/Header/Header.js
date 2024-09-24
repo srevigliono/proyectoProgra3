@@ -14,6 +14,12 @@ const Header = () => {
                 <Link to={"/"}>Home</Link> 
             </li>
             <li>
+                <Link to={'/peliculas-cartelera'}>Cartelera</Link>
+            </li>
+            <li>
+                <Link to={'/peliculas-populares'}>Populares</Link>
+            </li>
+            <li>
                 <Link to={"/favorites"}>Favoritos</Link> 
             </li>
             </ul>
