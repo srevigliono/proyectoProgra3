@@ -28,3 +28,68 @@ nav ul li a {
   text-decoration: none;
   font-size: 18px;
 }
+
+/* Estilo actual del header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgb(95, 95, 222);
+  color: white;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+@media (max-width: 420px) {
+  .header {
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 10px; 
+  }
+
+  .logo h1 {
+    font-size: 18px; 
+  }
+
+  nav ul {
+    flex-direction: column; 
+    gap: 5px; 
+    width: 100%;
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  nav ul li {
+    text-align: left; 
+  }
+
+  nav ul li a {
+    font-size: 14px; 
+  }
+}
+
+
+
+

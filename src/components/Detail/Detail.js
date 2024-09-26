@@ -24,28 +24,35 @@ class Detail extends Component {
 
     render() {
         const { movie } = this.state;
-        
-        if(!movie) {
-            return <Loader/>;
+
+        if (!movie) {
+            return <Loader />;
         }
 
         return (
-         
-                <div className="detalle">
-                    <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt={movie.title}
-                    />
 
-                    <div className="infoDetalle">
+            <div className="detalle">
+                <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt={movie.title}
+                />
+
+                <div className="infoDetalle">
                     <h2>{movie.title}</h2>
                     <p>Rating: {movie.vote_average} </p>
                     <p>Fecha De Estreno: {movie.release_date} </p>
                     <p>Duracion: {movie.runtime} </p>
                     <p>Sinopsis: {movie.overview} </p>
-                    <p>Género: </p>
+
+                    <p><strong>Géneros:</strong></p>
+                    <ul>
+                        {movie.genres.map((genero, index) => (
+                            <li key={index}>{genero.name}</li>
+                        ))}
+                    </ul>
+                    
                     <button> Agregar a favoritos </button>
-                    </div>
                 </div>
-      
+            </div>
+
         );
     }
 }
