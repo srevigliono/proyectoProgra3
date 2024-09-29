@@ -6,7 +6,8 @@ class Detail extends Component {
         super(props);
         this.state = {
             movie: null,
-            id: this.props.id
+            id: this.props.id,
+            textoAMostrar: "Agregar a favoritos "
         };
     }
 
@@ -20,7 +21,13 @@ class Detail extends Component {
                 })
             )
             .catch((e) => console.log("Error"));
+
+
+            //aca me pongo lo mismo que tengo en home movies de la parte de favoritos 
     }
+
+
+    //funcionalidad de favoritos 
 
     render() {
         const { movie } = this.state;
@@ -49,7 +56,7 @@ class Detail extends Component {
                         ))}
                     </ul>
                     
-                    <button> Agregar a favoritos </button>
+                    <button onClick={()=> this.handleFavs(this.state.id)}> {this.state.textoAMostrar} </button>
                 </div>
             </div>
 

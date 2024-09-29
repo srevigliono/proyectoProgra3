@@ -1,6 +1,7 @@
 import "./Header.css"
 import { Link } from 'react-router-dom';
 
+
 const Header = () => {
     return(
     <header className="header">
@@ -20,7 +21,7 @@ const Header = () => {
                 <Link to={'/peliculas-populares'}>Populares</Link>
             </li>
             <li>
-                <Link to={"/favorites"}>Favoritos</Link> 
+                <Link to={"/favoritos"}>Favoritos</Link> 
             </li>
             </ul>
         </nav>

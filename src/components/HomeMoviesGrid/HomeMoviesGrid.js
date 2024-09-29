@@ -22,6 +22,7 @@ class HomeMoviesGrid extends Component {
         }
       })
       .catch(error => console.log(error));
+
   }
 
   render() {

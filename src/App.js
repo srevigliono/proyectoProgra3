@@ -7,6 +7,7 @@ import Cartelera from "./pages/Cartelera";
 import Populares from "./pages/Populares";
 import Detalle from "./pages/Detalle";
 import SearchResults from "./pages/SearchResults";
+import Favoritos from "./pages/Favoritos";
 
 
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/peliculas-cartelera" component={Cartelera} />
             <Route path="/peliculas-populares" component={Populares} />
             <Route path="/movies/:id" component={Detalle} /> 
+            <Route path="/favoritos" component={Favoritos} /> 
             <Route path="" component={Error404} />
 
           </Switch>
