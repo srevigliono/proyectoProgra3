@@ -22,15 +22,60 @@ class Detail extends Component {
             )
             .catch((e) => console.log("Error"));
 
+        let storage = localStorage.getItem("favoritos");
 
-            //aca me pongo lo mismo que tengo en home movies de la parte de favoritos 
+        if (storage !== null) {
+            const guardados = JSON.parse(storage);
+            const estaEnFavoritos = guardados.includes(this.state.id);
+            this.setState({
+                esFavorito: estaEnFavoritos
+            });
+        }
+
+
+        //aca me pongo lo mismo que tengo en home movies de la parte de favoritos 
+    }
+
+    agregarFav() {
+        const storage = localStorage.getItem("favoritos");
+
+        if (storage !== null) {
+            const parsedArray = JSON.parse(storage);
+            parsedArray.push(this.state.id);
+            const stringArray = JSON.stringify(parsedArray);
+            localStorage.setItem("favoritos", stringArray);
+        } else {
+            const primerMovie = [this.state.id];
+            const stringArray = JSON.stringify(primerMovie);
+            localStorage.setItem("favoritos", stringArray);
+        }
+
+        this.setState({
+            esFavorito: true
+        });
+    }
+
+    sacarFav() {
+        const storage = localStorage.getItem("favoritos");
+
+        if (storage !== null) {
+            const parsedArray = JSON.parse(storage);
+            const favoritosRestantes = parsedArray.filter(id => id !== this.state.id);
+            const stringArray = JSON.stringify(favoritosRestantes);
+            localStorage.setItem("favoritos", stringArray);
+
+            this.setState({
+                esFavorito: false
+            });
+        }
     }
 
 
     //funcionalidad de favoritos 
 
     render() {
-        const { movie } = this.state;
+        const { movie, esFavorito } = this.state;
+
 
         if (!movie) {
             return <Loader />;
@@ -55,8 +100,10 @@ class Detail extends Component {
                             <li key={index}>{genero.name}</li>
                         ))}
                     </ul>
-                    
-                    <button onClick={()=> this.handleFavs(this.state.id)}> {this.state.textoAMostrar} </button>
+
+                    <button onClick={() => !this.state.esFavorito ? this.agregarFav() : this.sacarFav()} className='botones'>
+                        {!this.state.esFavorito ? "Agregar a favoritos" : "Quitar de favoritos"}
+                    </button>
                 </div>
             </div>
 
