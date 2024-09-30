@@ -36,3 +36,48 @@
   font-size: 18px;
   color: #888;
 }
+
+
+@media (max-width: 420px) {
+  .seccion {
+    padding: 15px;
+    background-color: #f5f5f5;
+  }
+ 
+ 
+  .vermas {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+ 
+ 
+  .vermas a {
+    font-size: 14px;
+  }
+ 
+ 
+  .titulo {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    font-size: 18px;
+  }
+ 
+ 
+  .populares-grid-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+ 
+ 
+  .cargando {
+    font-size: 16px;
+  }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 

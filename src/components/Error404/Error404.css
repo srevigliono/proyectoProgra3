@@ -1,12 +1,26 @@
 .text-error {
-    text-align: center; 
+    text-align: center;
     font-size: 35px;
-    font: bolder;
-
+    font-weight: bolder; 
 }
 
 .link-error {
-    color: rgb(8, 185, 182); 
+    color: rgb(8, 185, 182);
     text-decoration: underline;
     font-weight: bold;
+}
+
+
+@media (max-width: 420px) {
+    .text-error {
+        font-size: 20px; 
+        padding: 10px; 
+    }
+
+    .link-error {
+        font-size: 18px; 
+        text-align: center;
+        display: block; 
+        margin: 10px ; 
+    }
 }

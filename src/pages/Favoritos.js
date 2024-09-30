@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import HomeMovies from "../components/HomeMovies/HomeMovies";
-// falta el css
+
 
 class Favoritos extends Component {
     constructor(props) {
