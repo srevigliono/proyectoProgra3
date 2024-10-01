@@ -33,7 +33,7 @@ class SearchResults extends Component {
                     <section>
                         <h2>Resultados de búsqueda</h2>
                         {movies.length > 0 ? (
-                            <div className="search-grid">
+                            <div className="peliculas-grid-container">
                                 {movies.map((movie, index) => (<HomeMovies movie={movie} key={index} />))}</div>) : (
                             <p>No se encontraron resultados.</p>
                         )}

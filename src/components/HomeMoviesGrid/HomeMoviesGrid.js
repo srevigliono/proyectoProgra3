@@ -31,7 +31,7 @@ class HomeMoviesGrid extends Component {
 
     return (
       <section className="seccion">
-        <h2 className="tituloo">{this.props.titulo}</h2>
+        <h2 className="titulo">{this.props.titulo}</h2>
         <h3 className="vermas"><Link to={this.props.link}>Ver todas</Link></h3>
         <div className="populares-grid-container">
           {movies.length > 0
