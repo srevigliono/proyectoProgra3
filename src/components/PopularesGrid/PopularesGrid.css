@@ -37,3 +37,21 @@
     color: #888;
   }
   
+  @media (max-width: 420px) {
+    .titulo {
+     display: none;
+    }
+  
+    .peliculas-grid-container {
+      width: 90%; 
+    }
+  
+    .vermas {
+      font-size: 14px; 
+      margin-bottom: 15px;
+    }
+  
+    .cargando {
+      font-size: 16px; 
+    }
+  }

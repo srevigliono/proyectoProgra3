@@ -7,7 +7,7 @@ class Detail extends Component {
         this.state = {
             movie: null,
             id: this.props.id,
-            textoAMostrar: "Agregar a favoritos "
+            esFavorito: false
         };
     }
 
